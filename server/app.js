@@ -4,16 +4,10 @@ const schema = require("./schema/schema");
 const mongoose = require("mongoose");
 const app = express();
 
-async () => {
-  try {
-    await mongoose.connect(
-      "mongodb+srv://francis:madman@cluster0-03hwy.mongodb.net/",
-      { dbName: "graphql" }
-    );
-  } catch (error) {
-    handleError(error);
-  }
-};
+mongoose.connect(
+  "mongodb+srv://francis:mo@cluster0-03hwy.mongodb.net/test?retryWrites=true&w=majority",
+  { dbName: "graphql-ninja", useNewUrlParser: true }
+);
 
 mongoose.connection.once("open", () => {
   console.log("motherfucker dhdhhdhdhd");
