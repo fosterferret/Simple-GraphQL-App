@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const graphql = require("graphql");
 const Book = require("../models/book");
 const Author = require("../models/author");
