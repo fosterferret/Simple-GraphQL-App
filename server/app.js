@@ -10,7 +10,7 @@ mongoose.connect(
 );
 
 mongoose.connection.once("open", () => {
-  console.log("motherfucker dhdhhdhdhd");
+  console.log("I AM BATMANNNNN");
 });
 
 app.use(
